@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import Navbar from './navbar';
 import './css/App.css';
 
 function App() {
   return (
     <div className="App">
 
-
+    <Navbar />
 
       
     </div>
