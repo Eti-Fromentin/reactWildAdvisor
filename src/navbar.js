@@ -1,10 +1,20 @@
+import react, { useState } from 'react';
+
 import './css/navbar.css'
 import logo from "./assets/Wild-advisor-logo.png"
+import burger from "./assets/Hamburger_icon.png"
 
 const Navbar = () => {
+    const [mobileNav, setMobileNav] = useState(false) 
+    const ShowMenu = () => {
+      setMobileNav(!mobileNav);
+      console.log(mobileNav)
+      }
+    
+
   return (
     <header>
-      <div className="topnav" >
+      <div className={`${mobileNav ? 'topnav responsive' : 'topnav'}`} id="myTopnav" >
         
           <img
             className="wild-logo"
@@ -19,12 +29,13 @@ const Navbar = () => {
         <a href="surprise.html">Surprends-moi</a>
         <a href="favoris.html">Favoris</a>
        
-          <img
+         <img
             className="burger"
-            src="../assets/Hamburger_icon.png"
+            src={burger}
             alt="Hamburger icon"
+            onClick={ () => ShowMenu()}
           />
-        
+       
       </div>
     </header>
   );
