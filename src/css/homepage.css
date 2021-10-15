@@ -1,0 +1,145 @@
+@import "fonts.css";
+
+* {
+  text-decoration: none;
+}
+
+main {
+  margin: 0;
+  background-color: #1d1d1d;
+}
+
+/* .Container {
+    display: flex;
+    flex-direction: row;
+} */
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 70px;
+  font-family: var(--main-font-family);
+}
+
+#surPlace {
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+    url("../assets/placeMobile.jpeg");
+}
+
+#surLePouce {
+  background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+    url("../assets/pouceMobile.jpeg");
+  align-items: center;
+}
+
+#jaiSoif {
+  background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+    url("../assets/soifMobile.jpeg");
+  align-items: center;
+}
+
+#surprendsMoi {
+  background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+    url("../assets/surpriseMobile.jpg");
+  align-items: center;
+}
+
+.Logo {
+  content: url(../assets/Wild-advisor-logo.png);
+  block-size: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html {
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  margin: 0;
+}
+
+@media only screen and (min-width: 577px) {
+  main {
+    background-color: #1d1d1d;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  section {
+    width: 20%;
+    top: 25%;
+    border-radius: 20%;
+    margin-top: 15%;
+    height: 50vh;
+    margin-bottom: 15%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100px;
+    font-size: larger;
+    font-family: var(--main-font-family);
+  }
+
+  #surPlace {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+      url("../assets/place_5.jpeg");
+  }
+
+  #surLePouce {
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+      url("../assets/pouce_4.jpeg");
+  }
+
+  #jaiSoif {
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+      url("../assets/soif_3.jpeg");
+  }
+
+  #surprendsMoi {
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+      url("../assets/surprise_4.jpg");
+  }
+
+  .photo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .Logo {
+    block-size: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
