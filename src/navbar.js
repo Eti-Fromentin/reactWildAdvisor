@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
 
 import './css/navbar.css'
 import logo from "./assets/Wild-advisor-logo.png"

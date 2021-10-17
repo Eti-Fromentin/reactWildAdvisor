@@ -1,0 +1,33 @@
+@import "fonts.css";
+
+.CardContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--dark-gray);
+}
+
+.title {
+    height: 10vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+    color: var(--main-wcs-color);
+    background-color: var(--darker-gray);
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 2vh;
+    width: 100%;
+}
+
+main {
+    background-color: var(--dark-gray);
+    height: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
+
+
+}

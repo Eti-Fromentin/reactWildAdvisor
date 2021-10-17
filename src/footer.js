@@ -1,3 +1,4 @@
+import React from 'react';
 import './css/footer.css'
 
 
@@ -5,7 +6,7 @@ import './css/footer.css'
 const Footer = () => {
 
     return (
-        <footer class="footer"><a href='./a-propos.html'>À propos</a></footer>
+        <footer className="footer"><a href='./a-propos.html'>À propos</a></footer>
         
     )
 }

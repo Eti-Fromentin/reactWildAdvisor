@@ -1,0 +1,222 @@
+@import "fonts.css";
+
+.material-icons {
+    font-family: 'Material Icons'; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px; 
+    font-display: block;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    border: 1px var(--main-wcs-color) solid;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--light-gray);
+    text-decoration: none;
+    color: var(--main-wcs-color);
+} 
+
+/* .cards {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;  
+    flex-direction: row;
+    background-color: var(--dark-gray);
+} */
+
+.card {
+    width: 25vw;
+    max-height: 75vh;
+    margin-bottom: 4em;
+    background-color: var(--light-gray);
+    box-shadow: 3px 3px 5px 3px var(--lighter-gray);
+    font-family: var(--main-font-family);
+    font-size: 20px;
+}
+
+.card-header {
+    display: grid; 
+    position: relative;
+}
+
+.card-image {
+    width: auto;
+    max-height: 100%;
+}
+
+.image-enseigne {
+    max-width: 100%;
+    height: auto;  
+}
+
+.favButton {
+    position: absolute;
+    border: none;
+    border-radius: none;
+    background-color: #11ffee00; /*transparent*/
+    margin: 5px;
+    color: red;
+    right: 0;
+    top: 0%;
+}
+
+.favButton:hover {
+    cursor: pointer;
+}
+
+.trajet {
+    font-weight: bold;
+    font-size: x-large;
+    position: absolute;
+    background-color: var(--lighter-gray);
+    color: white; 
+    padding-left: 3px;
+    bottom: 0;
+    right: 0;
+}
+
+.card-body {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 10fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+    padding: 1em;
+    height: 10em;
+}
+
+.card-body-closed {
+    display: none;
+}
+
+.nom-enseigne {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding: 0%;
+    align-self: end;
+    color: white;
+}
+
+.style-enseigne {
+    align-self: baseline;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    font-size: 16px;
+}
+
+.prix-enseigne {
+    grid-column: 5;
+    grid-row: 2;
+    justify-self: end;
+    font-size:large;
+}
+
+.avis-enseigne {
+    grid-column: 5;
+    grid-row: 1;
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: 24px;
+    font-family: Times;
+    line-height: 1;
+}
+
+.avis-enseigne::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, orange var(--percent), var(--lighter-gray) var(--percent));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.maps-enseigne {
+    grid-column: 1;
+    grid-row: 4;
+
+}
+
+.card-body button {
+    grid-column: 5;
+    grid-row: 3;
+    height: 2.5em;
+    width: 3em;
+    justify-self: end;
+    position: absolute; 
+    border: none;
+    border-radius: 0%;
+}
+.card-body button:hover {
+    cursor:pointer;
+}
+
+.descript-enseigne {
+    position: relative;
+    display: none;
+    grid-auto-rows: minmax(30px, auto);
+    grid-auto-columns: minmax(10px, auto);
+    font-size: smaller;
+    padding: 1em;
+    height: 15em;
+}
+
+.desc-open {
+    display: grid;
+}
+
+.descript-text {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 16px;
+}
+
+
+.descript-site {
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 16px;
+}
+
+.descript-coord {
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 16px;
+}
+
+.btn-close-card {
+    grid-column: 7;
+    grid-row: 3;
+    padding: 1em;
+    justify-self: end;
+    position: absolute; 
+    height: 2.5em;
+    width: 3em;
+    border: none;
+}
+.btn-close-card:hover {
+    cursor:pointer;
+}
+
+@media screen and (max-width: 576px) { 
+
+    .card { 
+        width: 100vw;
+        max-height: 40em;
+        margin: 3em;
+    } 
+    .card-header {
+        width: 100vw;
+        max-height: 20em;
+    }
+    .image-enseigne {
+        object-fit: contain;
+    } 
+}
